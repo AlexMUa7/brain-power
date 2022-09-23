@@ -1,6 +1,18 @@
+@import './mixin';
 @import './common';
-@import './container';
 @import './reset';
+
+
+@import './container';
+
+
+@import './components/btn';
+
 @import './variables';
 @import './testimonials';
 @import './test';
+
+
+@import './contact-us';
+
+@import './footer'
