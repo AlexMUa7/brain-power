@@ -1,0 +1,65 @@
+.mobile-menu__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 140px 40px;
+    width: 100%;
+    height: 100%;
+    background: #06071B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.mobile-menu__list {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    
+}
+
+.mobile-menu__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.21;
+    color: #FFFFFF;
+    margin: 14px 20px;
+}
+
+.menu-burger__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mobile-menu__link {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    &:hover {
+        color: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    }
+}
+
+.mobile-menu__point {
+    
+}
