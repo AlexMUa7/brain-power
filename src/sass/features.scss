@@ -1,0 +1,90 @@
+.features {
+
+  background-color: #E5E5E5;
+  background-repeat: no-repeat;
+  background-position: 50% 27%, top, bottom;
+  background-size: 280px 409px< 249px 167px, 427px 337px;
+
+
+  @media screen and (min-width: 768px) {
+    background-position: left;
+
+  }
+
+  background-image:url(../images/features/img_sm.png), url(../images/features/vector-1.png), url(../images/features/vector-2.png);
+
+    @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+      background-image:
+    url(../images/features/img_sm@2x.png), url(../images/features/vector-1@2x.png),  url(../images/features/vector-2@2x.png) ;
+    }
+
+    @media screen and (min-width: 768px) {
+       background-image:
+     url(../images/features/img_md.png);
+
+   @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+        background-image:
+      url(../images/features/img_md@2x.png);
+     }
+      }
+
+      @media screen and (min-width: 1200px) {
+        background-image:
+        url(../images/features/img_lg.png), url(../images/features/vec-1_lg.png),  url(../images/features/vec-2_lg.png) ;
+
+        @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+          background-image:
+        url(../images/features/img_lg@2x.png), url(../images/features/vec-1_lg@2x.png),  url(../images/features/vec-2_lg@2x.png) ;
+        }
+}
+}
+
+
+.features__title {
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.features__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 489px;
+
+  @media screen  and (min-width:768px) {
+    margin-bottom: 40px;
+  }
+}
+
+
+.features__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.features__item-title {
+  display: inline-flex;
+   margin-bottom: 13px;
+   font-size: 16px;
+   line-height: 1.5;
+}
+
+.features__item-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.features__item-title:before {
+  content: '';
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    background-image: url(../images/features/img-1.png);
+
+    @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+      background-image: url(../images/features/img-1@2x.png);
+    }
+}
