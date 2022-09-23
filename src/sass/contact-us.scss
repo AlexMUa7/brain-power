@@ -27,6 +27,48 @@
   }
 }
 
+.contact__us .footer__text {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image:url(../images/png-for-contact-and-footer/spr-mob-1x.png), url(../images/png-for-contact-and-footer/spr-mob-2.png);
+    background-position:  top 250px left -157px, top -100px left 10px; 
+
+  
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+       background-image:url(../images/png-for-contact-and-footer/spr-mob-1@2x.png), url(../images/png-for-contact-and-footer/spr-mob-2@2x.png);
+    background-position:  top 250px left -157px, top -100px left 10px; 
+    }
+  
+    @media screen and (min-width: 481px) {
+       background-image:url(../images/png-for-contact-and-footer/spr-tab-1.png);
+    background-position:  top 250px left -157px, top -100px left 10px; 
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+       background-image:url(../images/png-for-contact-and-footer/spr-tab-1@2x.png);
+    background-position:  top 250px left -157px, top -100px left 10px; 
+      }
+    }
+  
+    @media screen and(min-width:769px) {
+        background-image:url(../images/png-for-contact-and-footer/spr-desk-1.png);
+        background-position:  top 250px left -157px, top -100px left 10px; 
+  
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image:url(../images/png-for-contact-and-footer/spr-desk1@2x.png);
+            background-position:  top 250px left -157px, top -100px left 10px; 
+        }
+    }
+
+}
+
+
 .contact__us-items {
   @media screen and (min-width: 1279px) {
     display: flex;
@@ -193,3 +235,5 @@
   font-size: 14px;
   line-height: 1.21;
 }
+
+
