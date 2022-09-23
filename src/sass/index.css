@@ -5,17 +5,6 @@ body {
   font-family: Inter, sans-serif;
 }
 
-:root {
-  --white-color: #ffffff;
-  --text-color: #000000;
-  --bg-color: #06071b;
-  --button-default-bg-color: linear-gradient(
-    90.03deg,
-    #00c5eb -1.97%,
-    #b544fe 89.43%
-  );
-}
-
 .container {
   /**
     |==============
@@ -67,19 +56,6 @@ body {
   }
 }
 
-.title-h2 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-}
-@media screen and (min-width: 768px) {
-  .title-h2 {
-    max-width: 768px;
-    font-size: 20px;
-    line-height: 1.21;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -117,4 +93,26 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+:root {
+  --white-color: #ffffff;
+  --text-color: #000000;
+  --bg-color: #06071b;
+  --button-default-bg-color: linear-gradient(
+    90.03deg,
+    #00c5eb -1.97%,
+    #b544fe 89.43%
+  );
+}
+
+.testimonials.section {
+  background-color: #e5e5e5;
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+}
+
+.testimonials.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */
