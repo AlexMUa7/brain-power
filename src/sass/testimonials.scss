@@ -5,23 +5,40 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 50%, 50% 0%;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/testimonials/bg-first-mob-2x.png),
+      url(../images/testimonials/bg-second-mob-2x.png);
+  }
+
   @media screen and (min-width: 768px) {
     background-image: url(../images/testimonials/bg-first-tab-1x.png),
       url(../images/testimonials/bg-second-tab-1x.png),
       url(../images/testimonials/bg-third-tab-1x.png);
     background-position: 50% 50%, 0% 0%, 100% 50%;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/testimonials/bg-first-tab-2x.png),
+        url(../images/testimonials/bg-second-tab-2x.png),
+        url(../images/testimonials/bg-third-tab-2x.png);
+      background-position: 50% 50%, 0% 0%, 100% 50%;
+    }
   }
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/testimonials/bg-first-laptop-1x.png),
-      url(../images/testimonials/bg-second-laptop-1x.png),
-      url(../images/testimonials/bg-third-laptop-1x.png);
-    background-position: 50% 100%, 0% 75%, 100% 0%;
+    background-image: url(../images/testimonials/bg-laptop-1x.png);
+    background-position: 50% 50%;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/testimonials/bg-laptop-2x.png);
+    }
   }
 }
 
 .testimonials.container {
   text-align: center;
-  margin: 0 auto;
 }
 
 .testimonials__photo {
