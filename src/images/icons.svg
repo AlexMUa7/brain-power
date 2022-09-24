@@ -43,7 +43,7 @@
 <symbol id="icon-oc" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M28.005 2.672h-24c-0.707 0.002-1.384 0.284-1.883 0.783s-0.781 1.177-0.783 1.883v16c0.002 0.707 0.284 1.384 0.783 1.883s1.177 0.781 1.883 0.783h9.333v2.667h-2.667v2.667h10.667v-2.667h-2.667v-2.667h9.333c0.707-0.002 1.384-0.284 1.883-0.783s0.781-1.177 0.783-1.883v-16c-0.002-0.707-0.284-1.384-0.783-1.883s-1.177-0.781-1.883-0.783zM14.341 18.227h-0.001l-6.333-6.333 1.887-1.884 4.448 4.448 7.78-7.781 1.887 1.887-9.667 9.664z"></path>
 </symbol>
-<symbol id="icon-open-mobile-menu" viewBox="0 0 52 32">
+<symbol id="icon-open-btn" viewBox="0 0 52 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 2h48"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 16h48"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 30h48"></path>

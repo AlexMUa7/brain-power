@@ -5,10 +5,34 @@
     padding: 140px 40px;
     width: 100%;
     height: 100%;
-    background: #06071B;
+    background-color: #06071B;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // Mobile screen
+    background-image: url(../images/header-menu/header-menu_sm.png);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/header-menu/header-menu__sm@2x.png);
+    }
+
+    // Tablet screen
+    @media screen and (min-width: 481px) {
+    background-image: url(../images/header-menu/header-menu_lg.png);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/header-menu/header-menu_lg@2x.png);
+        }
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    transform: translateX(100%);
+    transition: transform 400ms;
+    &.is-open {
+        transform: translateX(0%);
+    }
     @media screen and (min-width:768px) {
         display: none;
     }
@@ -19,47 +43,50 @@
     text-align: center;
     align-items: center;
     flex-direction: column;
-    list-style: none;
     
 }
 
 .mobile-menu__logo {
     position: absolute;
-    top: 0;
-    left: 0;
-    text-decoration: none;
-    font-family: 'Inter';
-    font-style: normal;
+    left: 21px;
+    top: 16px;
     font-weight: 400;
     font-size: 28px;
     line-height: 1.21;
     color: #FFFFFF;
-    margin: 14px 20px;
 }
 
 .menu-burger__btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 16px;
+    right: 20px;
+    border: none;
+    background-color: #06071B;
 }
 
 .mobile-menu__link {
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 32px;
     line-height: 1.2;
     display: flex;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
-    &:hover {
-        color: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    &:active {
+        color: transparent;
+        background-color: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    }
+    @media screen and (min-width: 480px) {
+        font-size: 48px;
+        line-height: 1.2;
     }
 }
 
 .mobile-menu__point {
-    
+    margin-bottom: 16px;
+    @media screen and (min-width: 480px) {
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 44px;
+    }
 }

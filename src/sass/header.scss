@@ -1,38 +1,46 @@
 .head {
     margin-top: 20px;
     background: #06071B;
-    z-index: 10;
+    width: 100%;
 }
 
 .head__container {
     background: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
-
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
 }
 
+
 .head__logo {
-    text-decoration: none;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: 1.21;
     color: #FFFFFF;
-    margin: 14px 20px;
+    margin: 14px 0px;
     @media screen and (min-width: 768px) {
-        margin: 14px 32px;
+        margin: 14px 0px;
     }
     @media screen and (min-width: 768px) {
-        margin: 19px 16px;
+        margin: 19px 0px;
     }
 }
 
 .head__list {
     display: flex;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.25;
@@ -45,12 +53,8 @@
     }
 }
 
-.head__link {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    color: #FFFFFF;
-    & + .head__link {
+.head__point {
+    & + .head__point {
         margin-left: 40px;
     }
     @media screen and (max-width: 767px) {
@@ -58,9 +62,14 @@
     }
 }
 
+.head__link {
+    color: #FFFFFF;
+}
+
 .head__btn {
     border: none;
-    background-color: none;
+    background-color: transparent;
+    color: #FFFFFF;
 
     @media screen and (min-width: 768px) {
         display: none;
