@@ -2,17 +2,20 @@
 @import './common';
 @import './reset';
 
-
 @import './container';
 @import './variables';
 
+
 @import './components/btn';
 
-
+@import './header';
+@import './hero';
+@import './features';
+@import './video';
+@import './team';
 @import './testimonials';
-@import './test';
-
-
 @import './contact-us';
+@import './footer';
+// @import './example';
+// @import './modal';
 
-@import './footer'
