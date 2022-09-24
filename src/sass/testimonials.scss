@@ -21,6 +21,7 @@
 
 .testimonials.container {
   text-align: center;
+  margin: 0 auto;
 }
 
 .testimonials__photo {
@@ -118,8 +119,9 @@
   object-fit: cover;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  color: #939eac;
-  opacity: var(--swiper-pagination-bullet-opacity, 1);
+.swiper-pagination-bullet-active {
+  background: #000000;
+  //   opacity: var(--swiper-pagination-bullet-opacity, 1);
 }
+
 /* background: var(--swiper-pagination-color,var(--swiper-theme-color));*/
