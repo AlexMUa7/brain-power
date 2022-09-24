@@ -4,13 +4,8 @@
   @include section();
   color: var(--white-color);
 
-  padding-left: 28px;
-  padding-right: 28px;
-
   @media screen and (min-width: 768px) {
     @include section(74px, 80px);
-    padding-left: 32px;
-    padding-right: 32px;
   }
 
   &-titel {
@@ -27,12 +22,16 @@
   }
 }
 
-.contact__us .footer__text {
+.contact__us-container {
+  margin: 0 auto;
+}
+
+.contact__us {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image:url(../images/png-for-contact-and-footer/spr-mob-1x.png), url(../images/png-for-contact-and-footer/spr-mob-2.png);
-    background-position:  top 250px left -157px, top -100px left 10px; 
+    background-position:  top 0px left 0px, top -100px left 10px; 
 
   
     @media (min-device-pixel-ratio: 2),
@@ -125,11 +124,11 @@
 }
 
 .subscribe_field:not(:placeholder-shown):required:valid {
-  background-color: #c3edc350;
+  background-color: #ffffff;
 }
 
 .subscribe_field:not(:placeholder-shown):required:invalid {
-  background-color: #ff574b50;
+  background-color: #ff1100;
 }
 
 .massage-fild {
