@@ -1,0 +1,197 @@
+.features {
+  background-color: #E5E5E5;
+  background-repeat: no-repeat;
+  background-position: 50% 25%, top, bottom;
+  background-image:url(../images/features/img_sm.png), url(../images/features/vector-1.png), url(../images/features/vector-2.png);
+    @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+      background-image:
+    url(../images/features/img_sm@2x.png), url(../images/features/vector-1@2x.png),  url(../images/features/vector-2@2x.png) ;
+    }
+
+
+    @media screen and (min-width: 768px) {
+       background-image:
+     url(../images/features/img_md.png);
+
+   @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+        background-image:
+      url(../images/features/img_md@2x.png);
+     }
+      }
+
+
+      @media screen and (min-width: 1280px) {
+        background-image:
+        url(../images/features/img_lg.png), url(../images/features/vec-1_lg.png),  url(../images/features/vec-2_lg.png) ;
+
+        @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+          background-image:
+        url(../images/features/img_lg@2x.png), url(../images/features/vec-1_lg@2x.png),  url(../images/features/vec-2_lg@2x.png) ;
+        }
+        }
+
+      @media screen and (min-width: 768px) {
+      background-position: left;
+      }
+
+      @media screen and (min-width: 1280px) {
+        background-position: 50% 68%, top right, bottom left;
+        background-size: 396px 601px, 100%, 100%;
+        }
+    }
+
+
+ .features__list {
+
+      @media screen  and (min-width:768px) and (max-width:1279px) {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+      }
+
+      @media screen  and (min-width:1280px) {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 152px;
+      margin-left: 132px;
+      }
+    }
+
+
+    .features__list .features__last {
+      @media screen and (min-width:768px) and (max-width: 1279px) {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        flex-wrap: wrap;
+        margin-bottom: 0;
+      }
+
+    }
+
+.features__title {
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media screen and (min-width:768px) {
+    font-size: 24px;
+
+  }
+
+  @media screen and (min-width:1280px) {
+    font-size: 24px;
+    margin-bottom: 80px;
+  }
+}
+
+.features__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 489px;
+
+  @media screen  and (min-width:768px) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width:1280px) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 196px;
+    margin-right: 196px;
+    margin-bottom: 141px;
+
+  }
+}
+
+
+.features__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.features__item {
+
+  @media screen and (min-width:768px) and (max-width: 1279px)  {
+
+    width: 278px;
+
+    margin-right: 90px;
+
+    &:not(:last-child)
+    {margin-bottom: 0;}
+
+  }
+
+}
+
+.features__item-title {
+  display: inline-flex;
+   align-items: center;
+   margin-bottom: 13px;
+   font-size: 16px;
+   line-height: 1.5;
+}
+
+.features__item-text {
+
+  margin-left: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+
+  @media screen and (min-width:1280px)  {
+    width: 220px;
+
+  }
+}
+
+.features__item-title:before {
+  content: '';
+   display: inline-flex;
+   align-items: center;
+
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    background-image: url(../images/features/img-1.png);
+
+    @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+      background-image: url(../images/features/img-1@2x.png);
+    }
+}
+
+
+.features__thumb {
+   margin-bottom: 24px;
+
+  @media screen and (min-width:1280px) {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+  }
+
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+     gap: 80px;
+    margin-bottom: 80px;
+
+      &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+
+
+}
+
