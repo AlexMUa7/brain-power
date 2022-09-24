@@ -1,4 +1,4 @@
- .contact__us {
+.contact__us {
   font-size: 14px;
 
   @include section();
@@ -27,49 +27,54 @@
 }
 
 .contact__us {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image:url(../images/png-for-contact-and-footer/spr-mob-1x.png), url(../images/png-for-contact-and-footer/spr-mob-2.png);
-    background-position:  top 0px left 0px, top -100px left 10px; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/png-for-contact-and-footer/spr-mob-1x.png),
+    url(../images/png-for-contact-and-footer/spr-mob-2.png);
+  background-position: top 300px left -328px, top -100px left 0px;
 
-  
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/png-for-contact-and-footer/spr-mob-1@2x.png),
+      url(../images/png-for-contact-and-footer/spr-mob-2@2x.png);
+    background-position: top 300px left -328px, top -100px left 0px;
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: url(../images/png-for-contact-and-footer/spr-tab-1.png);
+    background-position: top -250px left 0;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-       background-image:url(../images/png-for-contact-and-footer/spr-mob-1@2x.png), url(../images/png-for-contact-and-footer/spr-mob-2@2x.png);
-    background-position:  top 250px left -157px, top -100px left 10px; 
+      background-image: url(../images/png-for-contact-and-footer/spr-tab-1@2x.png);
+      background-position: top -250px left 0, top 1px left 1px;
     }
-  
-    @media screen and (min-width: 481px) {
-       background-image:url(../images/png-for-contact-and-footer/spr-tab-1.png);
-    background-position:  top 250px left -157px, top -100px left 10px; 
+  }
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-       background-image:url(../images/png-for-contact-and-footer/spr-tab-1@2x.png);
-    background-position:  top 250px left -157px, top -100px left 10px; 
-      }
-    }
-  
-    @media screen and(min-width:769px) {
-        background-image:url(../images/png-for-contact-and-footer/spr-desk-1.png);
-        background-position:  top 250px left -157px, top -100px left 10px; 
-  
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            background-image:url(../images/png-for-contact-and-footer/spr-desk1@2x.png);
-            background-position:  top 250px left -157px, top -100px left 10px; 
-        }
+  @media screen and(min-width:769px) {
+    background-image: url(../images/png-for-contact-and-footer/spr-desk-1.png),
+      url(../images/png-for-contact-and-footer/spr-tab-2.png);
+    background-position: top -180px left -455px, top 1px left 1px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/png-for-contact-and-footer/spr-desk1@2x.png),
+        url(../images/png-for-contact-and-footer/spr-tab-2@x.png);
+      background-position: top -140px left -455px, top 149px left -50px;
     }
 
+    @media screen and (min-width: 1280px) {
+      background-position: top -430px left 0px;
+    }
+  }
 }
 
-
 .contact__us-items {
-  @media screen and (min-width: 1279px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -84,7 +89,7 @@
     flex-direction: column;
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (min-width: 1280px) {
     width: 608px;
   }
 }
@@ -142,7 +147,7 @@
   }
 }
 
-.Get-in__titel {
+.titel {
   font-size: 20px;
   line-height: 1.21;
   text-align: center;
@@ -169,7 +174,7 @@
     font-size: 16px;
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (min-width: 1280px) {
     text-align: left;
     max-width: 500px;
   }
@@ -182,26 +187,24 @@
   gap: 16px;
   margin-bottom: 42px;
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (min-width: 1280px) {
     justify-content: start;
   }
-}
 
-.social__item {
-  width: 40px;
-  height: 40px;
-}
+  &__item {
+    width: 40px;
+    height: 40px;
+  }
 
-.social__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-
-  background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
+  }
 }
 
 .icon-regular {
@@ -212,7 +215,6 @@
 
 .icon-hovered {
   opacity: 0;
-
   .social__link:hover .social__icon & {
     opacity: 1;
   }
@@ -222,17 +224,21 @@
   text-align: center;
   margin-bottom: 12px;
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (min-width: 1280px) {
     text-align: left;
   }
+
+  &__item {
+    @media screen and (min-width: 1280px) {
+      padding-right: 354px;
+    }
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--white-color);
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }
-
-.contacts__link {
-  display: block;
-  margin-bottom: 12px;
-  color: var(--white-color);
-  font-size: 14px;
-  line-height: 1.21;
-}
-
-

@@ -10,4 +10,24 @@
 .footer{
    padding:22px 24px;
    border-top: 1px solid #FFFFFF;
+
+
+    @media screen and (max-width:480px) {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image:url(../images/png-for-contact-and-footer/spr-mob-1x.png);
+        background-position: top -317px left 68px;  
+
+        
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image:url(../images/png-for-contact-and-footer/spr-mob-1@2x.png);
+        background-position:  top -317px left 68px; 
+        } 
+        
+    }
+
+
 }
