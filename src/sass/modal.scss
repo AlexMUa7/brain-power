@@ -9,6 +9,7 @@
 
  .modal {
 
+
   position: relative;
   // position: absolute;
   // top: 50%;
@@ -19,6 +20,12 @@
   width: 100%;
 
   padding: 48px 24px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 568px;
+    padding: 32px 40px;
+
+  }
 
  }
 
@@ -36,6 +43,13 @@
   color: #FFFFFF;
   margin-bottom: 24px;
 
+  @media screen and (min-width:768px) {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+
+  }
+
  }
 
  .download__first {
@@ -46,6 +60,11 @@
   border-radius: 6px;
   margin-bottom: 20px;
 
+  @media screen and (min-width:768px) {
+    width: 233px;
+
+  }
+
  }
 
  .download__list {
@@ -53,11 +72,21 @@
   margin-bottom: 88px;
  }
 
+ .download__icon-one {
+  fill: currentColor;
+  display: inline-flex;
+
+
+
+
+
+ }
  .download__icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 28px;
+  margin-top: 28px;
+  fill: #FFFFFF;
 
  }
 
@@ -66,6 +95,21 @@
   border: 1px solid blueviolet;
 
   border-radius: 6px;
+
+  @media screen and (min-width:768px) {
+    width: 233px;
+
+  }
+ }
+
+ .downloads {
+
+  @media screen and (min-width: 768px) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:20px;
+}
  }
 
  .download__title {
@@ -79,16 +123,19 @@
  }
 
  .download__item {
-  display: flex;
-  margin-left: 38px;
-  margin-right: 40px;
+
+
+  margin-left: 20px;
+  margin-right: auto;
 
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   color: #FFFFFF;
-  text-align: center;
-  align-items: center;
+  // text-align: left;
+
+
+
  }
 
  .download__item:not(:last-child) {
@@ -102,20 +149,40 @@
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   color: #FFFFFF;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+  }
 
  }
 
- 
- .characteristics__item {
-  margin-left: 56px;
-  position: relative;
+//  .characteristics {
+//   display: inline-flex;
 
+//  }
+
+//  .characteristics__list {
+//   display: inline-flex;
+//  }
+
+
+ .characteristics__item {
+  // display: inline-flex;
   margin-bottom: 20px;
+
+  // @media screen and (min-width:768px) {
+
+
+  // }
+
  }
 
  .characteristics__title {
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3;
@@ -123,13 +190,13 @@
 
  }
 
- .characteristics__icon {
-  position: absolute;
-  top: 22px;
-  left: 20px;
- }
+//  .characteristics__icon {
+//    display: inline-flex;
+
+//  }
 
  .characteristics__text {
+
   margin-top: 4px;
   font-weight: 400;
   font-size: 12px;
