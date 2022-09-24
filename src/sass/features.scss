@@ -78,7 +78,13 @@
   text-align: center;
   margin-bottom: 40px;
 
+  @media screen and (min-width:768px) {
+    font-size: 24px;
+
+  }
+
   @media screen and (min-width:1280px) {
+    font-size: 24px;
     margin-bottom: 80px;
   }
 }
@@ -91,10 +97,14 @@
   margin-bottom: 489px;
 
   @media screen  and (min-width:768px) {
+    font-size: 16px;
+    line-height: 1.5;
     margin-bottom: 40px;
   }
 
   @media screen and (min-width:1280px) {
+    font-size: 16px;
+    line-height: 1.5;
     margin-left: 196px;
     margin-right: 196px;
     margin-bottom: 141px;
