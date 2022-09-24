@@ -15,12 +15,12 @@
     
     @media screen and (min-width: 768px) {
         padding-top: 60px;
-        background-image: url(../images/hero/img_md.png);
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/hero/img_md@2x.png);
-            }
+        // background-image: url(../images/hero/img_md.png);
+        //     @media (min-device-pixel-ratio: 2),
+        //     (min-resolution: 192dpi),
+        //     (min-resolution: 2dppx) {
+        //         background-image: url(../images/hero/img_md@2x.png);
+        //     }
     }
     
     @media screen and (min-width: 1200px) {
