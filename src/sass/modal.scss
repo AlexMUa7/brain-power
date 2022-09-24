@@ -58,7 +58,7 @@
   background-color: blue;
   background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
   border-radius: 6px;
-  margin-bottom: 20px;
+
 
   @media screen and (min-width:768px) {
     width: 233px;
@@ -69,18 +69,23 @@
 
  .download__list {
   margin-top: 20px;
-  margin-bottom: 88px;
+
  }
 
  .download__icon-one {
   fill: currentColor;
-  display: inline-flex;
-
-
-
-
+  display: flex;
+  align-items: baseline;
+  margin-right: 4px;
 
  }
+
+
+ .download__text {
+  display: flex;
+ }
+
+
  .download__icons {
   display: flex;
   justify-content: center;
@@ -123,7 +128,8 @@
  }
 
  .download__item {
-
+   display: flex;
+   align-items: baseline;
 
   margin-left: 20px;
   margin-right: auto;
@@ -143,7 +149,7 @@
  }
 
 
- .download__text {
+ .download__description {
   margin-top: 28px;
   margin-bottom: 25px;
 
