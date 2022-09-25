@@ -28,7 +28,7 @@
   top: 50%;
   left: 50%;
 
-  outline: 2px solid green;
+
   max-width: 280px;
   width: 100%;
 
@@ -61,7 +61,7 @@
 
   width: 24px;
   height: 24px;
-  
+
   border: none;
   padding: 0;
   background-color: transparent;
@@ -82,7 +82,7 @@
   line-height: 1.4;
   text-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: var(--white-color);
   margin-bottom: 24px;
 
   @media screen and (min-width:768px) {
@@ -129,7 +129,7 @@
   justify-content: center;
   align-items: center;
 
-  fill: #FFFFFF;
+  fill: var(--white-color);
 
  }
 
@@ -178,7 +178,7 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #FFFFFF;
+  color: var(--white-color);
   margin-bottom: 20px;
  }
 
