@@ -1,5 +1,5 @@
 .features {
-  background-color: #E5E5E5;
+  background-color: var(--white-color);
   background-repeat: no-repeat;
   background-position: 50% 25%, top, bottom;
   background-image:url(../images/features/img_sm.png), url(../images/features/vector-1.png), url(../images/features/vector-2.png);
@@ -22,11 +22,11 @@
 
       @media screen and (min-width: 1280px) {
         background-image:
-        url(../images/features/img_lg.png), url(../images/features/vec-1_lg.png),  url(../images/features/vec-2_lg.png) ;
+        url(../images/features/img_lg.png), url(../images/features/img_lg-top.png), url(../images/features/img-big_lg.png);
 
         @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
           background-image:
-        url(../images/features/img_lg@2x.png), url(../images/features/vec-1_lg@2x.png),  url(../images/features/vec-2_lg@2x.png) ;
+        url(../images/features/img_lg@2x.png), url(../images/features/img_lg-top@2x.png),  url(../images/features/img-big_lg@2x.png) ;
         }
         }
 
@@ -35,10 +35,14 @@
       }
 
       @media screen and (min-width: 1280px) {
-        background-position: 50% 68%, top right, bottom left;
-        background-size: 396px 601px, 100%, 100%;
+        background-position: 50% 68%, 100% -110%, 16% -70%;
+
         }
     }
+
+
+    // 50% 68%, top right, bottom left
+    // 396px 601px,
 
 
  .features__list {
