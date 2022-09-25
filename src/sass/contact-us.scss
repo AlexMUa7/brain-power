@@ -218,7 +218,7 @@
 
 .icon-hovered {
   opacity: 0;
-  transition-duration: 250ms;
+  transition-duration: 400ms;
   .social__link:hover .social__icon & {
     opacity: 1;
   }
