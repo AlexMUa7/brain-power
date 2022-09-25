@@ -1,0 +1,148 @@
+.team {
+  background-color: var(--white-color);
+  padding-bottom: 0;
+}
+
+.team__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.21;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+  }
+}
+
+.team__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    max-width: 886px;
+  }
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    row-gap: 40px;
+    column-gap: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 32px;
+  }
+}
+
+.team__director {
+  background: linear-gradient(
+      312.87deg,
+      rgba(0, 197, 235, 0.5) -0.2%,
+      rgba(181, 68, 254, 0.5) 112.66%
+    ),
+    #06071b;
+  backdrop-filter: blur(17.5px);
+}
+
+.team__img {
+  border-radius: 10px;
+}
+
+.team__lead-designer {
+  background: linear-gradient(
+      105.09deg,
+      rgba(0, 197, 235, 0.5) -13.66%,
+      rgba(181, 68, 254, 0.5) 104.34%
+    ),
+    #06071b;
+  backdrop-filter: blur(17.5px);
+  @media screen and (min-width: 1280px) {
+    backdrop-filter: none;
+  }
+}
+
+.team__developer {
+  background: linear-gradient(
+      105.09deg,
+      rgba(0, 197, 235, 0.5) -13.66%,
+      rgba(181, 68, 254, 0.5) 104.34%
+    ),
+    #06071b;
+  backdrop-filter: blur(17.5px);
+  @media screen and (min-width: 1280px) {
+    background: linear-gradient(
+        176.56deg,
+        rgba(0, 197, 235, 0.5) 4.33%,
+        rgba(181, 68, 254, 0.5) 116.56%
+      ),
+      #06071b;
+    backdrop-filter: none;
+  }
+}
+
+.team__sr-designer {
+  background: linear-gradient(
+      313.81deg,
+      rgba(0, 197, 235, 0.5) -7.83%,
+      rgba(181, 68, 254, 0.5) 83.61%
+    ),
+    #06071b;
+  backdrop-filter: blur(17.5px);
+  @media screen and (min-width: 1280px) {
+    backdrop-filter: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.team__director,
+.team__lead-designer,
+.team__developer,
+.team__sr-designer {
+  width: 280px;
+  border-radius: 15px;
+  padding: 16px 16px 12px 16px;
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 288px;
+  }
+}
+
+.team__name {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.22;
+  color: var(--white-color);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.team__position {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: var(--white-color);
+}
