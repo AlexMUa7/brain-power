@@ -183,13 +183,15 @@
 
  .characteristics {
 
+
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 20px 22px 0 20px;
   border-radius: 6px;
   margin: 2px;
   background: var(--bg-color);
+
+
 
   @media screen and (min-width:768px) {
   display: flex;
@@ -219,55 +221,51 @@
 
 
 
+
+
  }
 
  .border {
 
   border-bottom: 2px solid;
 
-
-  border-image-source:  linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
+  border-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
   border-image-slice: 1;
   padding: 0;
 
   @media screen and (min-width: 768px) {
+    border-bottom: none;
+   
     border-right: 2px solid;
-    border-image-source:  linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
+    border-image: linear-gradient(180deg, #00c5eb -2%, #b544fe 90%);
     border-image-slice: 1;
-    padding: 0;
-   border-bottom: none;
-
   }
-
  }
-
 
  .characteristics__item {
   display: flex;
   gap: 4px;
   margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 
-
-
+  &:first-child {
+    margin-top: 20px;
+  }
 
   @media screen and (min-width:768px) {
    margin-right: 40px;
-
   }
 
  }
 
  .characteristics__title {
-
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3;
   color: #FFFFFF;
 
-
-
  }
-
 
 
  .characteristics__text {
@@ -280,15 +278,78 @@
 
  .characteristics__icon {
   margin-right: 8px;
-
-
 }
 
  .download__button {
+  position: relative;
 
+  display: block;
+  padding: 11px 77px 12px 76px;
+  min-width: 232px;
+  min-height: 42px;
+
+  margin-top: 20px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
   color: #FFFFFF;
-  background-color: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+  text-align: center;
+
   border-radius: 5px;
+  border: none;
+
+  overflow: hidden;
+  cursor: pointer;
+
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+  }
+
+  &::before {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  &::after {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-radius: 5px;
+    background-color: #06071b;
+    opacity: 0;
+    transition: 300ms;
+  }
+
+
+  .download__button-text {
+
+    position: relative;
+      z-index: 10;
+  }
+
+  @media screen and (min-width: 768px) {
+
+    width: 232px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
  }
+
+ .download__button:hover::after,
+ .download__button:focus::after {
+  opacity: 1;
+}
+
