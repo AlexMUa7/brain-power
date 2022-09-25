@@ -126,6 +126,8 @@
   font-size: 14px;
   color: #939eac;
   border-radius: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .subscribe_field:not(:placeholder-shown):required:valid {
@@ -141,6 +143,9 @@
   height: 220px;
   width: 100%;
   color: #939eac;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 12px;
 
   @media screen and(min-width:768px) {
     height: 168px;
@@ -215,6 +220,7 @@
 
 .icon-hovered {
   opacity: 0;
+  transition-duration: 250ms;
   .social__link:hover .social__icon & {
     opacity: 1;
   }
