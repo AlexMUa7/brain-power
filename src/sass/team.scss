@@ -1,11 +1,11 @@
 .team {
   background-color: var(--white-color);
-  padding-bottom: 0;
-  background-position: 50% 0%, 50% 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-image: url(../images/team/bg-team-mob-top.png),
     url(../images/team/bg-team-mob-botton.png);
+  padding-bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%, 50% 50%;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -13,15 +13,13 @@
       url(../images/team/bg-team-mob-botton@2x.png);
   }
   @media screen and (min-width: 768px) {
-    background-position: 100% 0%, 100% 50%;
-    background-image: url(../images/team/bg-team-tab-right_top.png),
-      url(../images/team/bg-team-tab-right_center.png);
+    background-position: 50% 50%;
+    background-image: url(../images/team/bg-tab-1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/team/bg-team-tab-right_top@2x.png),
-        url(../images/team/bg-team-tab-right_center@2x.png);
+      background-image: url(../images/team/bg-tab-2x.png);
     }
   }
   @media screen and (min-width: 1280px) {
