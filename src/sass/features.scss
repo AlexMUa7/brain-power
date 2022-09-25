@@ -1,11 +1,13 @@
 .features {
   background-color: var(--white-color);
   background-repeat: no-repeat;
-  background-position: 50% 25%, top, bottom;
-  background-image:url(../images/features/img_sm.png), url(../images/features/vector-1.png), url(../images/features/vector-2.png);
+  background-position: 50% 25%, 50% -30%, 50% 120%;
+
+
+  background-image:url(../images/features/img_sm.png), url(../images/features/img-top-mob_sm.png), url(../images/features/img-bottom_sm.png);
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
       background-image:
-    url(../images/features/img_sm@2x.png), url(../images/features/vector-1@2x.png),  url(../images/features/vector-2@2x.png) ;
+    url(../images/features/img_sm@2x.png), url(../images/features/img-top-mob_sm@2x.png),  url(../images/features/img-bottom_sm@2x.png) ;
     }
 
 
@@ -41,10 +43,6 @@
     }
 
 
-    // 50% 68%, top right, bottom left
-    // 396px 601px,
-
-
  .features__list {
 
       @media screen  and (min-width:768px) and (max-width:1279px) {
@@ -69,8 +67,6 @@
         position: absolute;
         left: 0;
         bottom: 0;
-
-        flex-wrap: wrap;
         margin-bottom: 0;
       }
 
@@ -126,9 +122,7 @@
   @media screen and (min-width:768px) and (max-width: 1279px)  {
 
     width: 278px;
-
-    margin-right: 90px;
-
+    margin-right: 60px;
     &:not(:last-child)
     {margin-bottom: 0;}
 
@@ -194,8 +188,6 @@
       margin-bottom: 0;
     }
   }
-
-
 
 }
 
