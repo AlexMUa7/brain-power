@@ -1,11 +1,13 @@
-@import './reset';
+
+@import './mixin';
 @import './common';
-
-
+@import './reset';
 
 @import './container';
-
 @import './variables';
+
+@import './components/btn';
+
 @import './header';
 @import './hero';
 @import './features';
@@ -21,4 +23,7 @@
 
 @import './contact-us';
 @import './footer';
+
+// @import './example';
+@import './modal';
 
