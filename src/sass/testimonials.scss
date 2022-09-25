@@ -86,6 +86,10 @@
     font-size: 16px;
     line-height: 1.58;
   }
+  @media screen and(min-width:1280px) {
+    padding-left: 197px;
+    padding-right: 197px;
+  }
 }
 
 /* СSS for Slider*/
