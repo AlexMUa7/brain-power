@@ -1,16 +1,10 @@
 .video {
   @media screen and (min-width: 768px) {
     padding-bottom: 40px;
-
-    background-image: url(../images/watch-video/bg-video-tab.png);
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-size: auto;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 60px;
-    padding-right: 105px;
     padding-bottom: 60px;
   }
 }
@@ -21,15 +15,11 @@
   align-items: center;
   row-gap: 40px;
 
-  background-image: url(../images/watch-video/Ellipse\ 19-min.png),
-    url(../images/watch-video/Ellipse\ 20-min.png);
-  background-repeat: no-repeat;
-  background-position: 100% 120%, 0% 120%;
-  background-size: auto;
   @media screen and (min-width: 1280px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: normal;
+    padding-right: 105px;
   }
 }
 

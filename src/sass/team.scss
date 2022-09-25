@@ -1,6 +1,9 @@
 .team {
   background-color: var(--white-color);
   padding-bottom: 0;
+  background-image: url(../images/team/bg-team-mob-top.png),
+    url(../images/team/bg-team-mob-botton.png);
+  background-repeat: no-repeat;
 }
 
 .team__title {
