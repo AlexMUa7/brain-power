@@ -87,20 +87,20 @@
 
  }
 
- .download__first {
-  position: relative;
-  height: 394px;
+//  .download {
+//   position: relative;
+//   height: 394px;
 
-  // background-image:var( --button-default-bg-color);
-  border-radius: 6px;
+//   background-image:var( --button-default-bg-color);
+//   border-radius: 6px;
 
 
-  @media screen and (min-width:768px) {
-    width: 233px;
+//   @media screen and (min-width:768px) {
+//     width: 233px;
 
-  }
+//   }
 
- }
+//  }
 
  .download__list {
   margin-top: 20px;
@@ -125,30 +125,6 @@
 
  }
 
-//  .download {
-//   position: relative;
-//   height: 394px;
-//   border-radius: 6px;
-//   background: var(--bg-color);
-
-//   @media screen and (min-width:768px) {
-//     width: 233px;
-
-//   }
-
-//     &::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   z-index: -1;
-//   margin: -2px;
-//   border-radius: inherit;
-//   background-image: var( --button-default-bg-color);
-//  }
-// }
 
  .downloads {
   display: flex;
@@ -379,48 +355,34 @@
   opacity: 1;
 }
 
-.down__checkbox {
-  position: absolute;
-  opacity: 1;
-  transform: scale(1);
-}
-
-.down__checkbox + .download__checkbox {
-  height: 394px;
-  border-radius: 6px;
-  background-image:var( --button-default-bg-color);
 
 
-}
+  .download {
+    position: relative;
+    height: 394px;
+    border-radius: 6px;
+    background: var(--bg-color);
 
-.down__checkbox:checked + .download__checkbox {
-  background: var(--bg-color);
+    @media screen and (min-width:768px) {
+      width: 233px;
 
- }
+    }
 
-
-
-// .form__unchecked {
-//   transition: 250ms;
-// }
-
-
-// .form-checkbox:checked + .form__unchecked {
-
-//   opacity: 0;
-// }
-
-
-// .down__checkbox:checked + .form__checked {
-//   opacity: 1;
-// }
+      &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background-image: var( --button-default-bg-color);
+   }
+  }
 
 
-// .form__checked {
-//   opacity: 0;
-//   transition: 250ms;
-// }
-
-// .down__checkbox:checked + .form__checked {
-//   opacity: 1;
-// }
+  .download:checked {
+    background: var(--button-default-bg-color);
+  }
