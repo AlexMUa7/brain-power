@@ -1,3 +1,15 @@
+.section.video {
+  background-image: url(../images/watch-video/bg-team-mob-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 50%;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/watch-video/bg-team-mob-2x.png);
+  }
+}
+
 .video__title {
   color: #ffffff;
   text-align: center;
@@ -40,6 +52,12 @@
 
 .video__icon {
   fill: #ffffff;
+}
+
+.video__picture {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
 }
 
 // .video {
