@@ -1,3 +1,11 @@
+.video__container {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-basis: calc((100% - 161px) / 2);
+    // justify-content: space-between;
+  }
+}
+
 .section.video {
   background-image: url(../images/watch-video/bg-team-mob-1x.png);
   background-repeat: no-repeat;
