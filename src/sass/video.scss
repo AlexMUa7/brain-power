@@ -1,12 +1,38 @@
 .section.video {
   background-image: url(../images/watch-video/bg-team-mob-1x.png);
+  background-position: right -9px bottom -7px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100% 50%;
+  background-size: 323px 285px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/watch-video/bg-team-mob-2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/watch-video/bg-tab-top-1x.png),
+      url(../images/watch-video/bg-tab-down-1x.png);
+    background-position: right 149px bottom -7px;
+    background-repeat: no-repeat;
+    background-size: 809px 913px, 544px 310px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/watch-video/bg-tab-top-2x.png),
+        url(../images/watch-video/bg-tab-down-2x.png);
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/watch-video/bg-laptop-left-1x.png),
+        url(../images/watch-video/bg-laptop-rigth-1x.png);
+      background-position: right 149px bottom -7px;
+      background-repeat: no-repeat;
+      background-size: 1452px 662px, 522px 516px;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/watch-video/bg-laptop-left-2x.png),
+          url(../images/watch-video/bg-laptop-rigth-2x.png);
+      }
+    }
   }
 }
 
@@ -68,6 +94,9 @@
 .video__picture {
   display: flex;
   justify-content: center;
+  @media screen and (min-width: 1280px) {
+    padding-right: 105px;
+  }
 }
 
 .video__list {
