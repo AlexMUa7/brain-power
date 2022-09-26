@@ -1,7 +1,9 @@
 .features {
+  
   background-color: var(--white-color);
   background-repeat: no-repeat;
   background-position: 50% 25%, 50% -30%, 50% 120%;
+
 
 
   background-image:url(../images/features/img_sm.png), url(../images/features/img-top-mob_sm.png), url(../images/features/img-bottom_sm.png);
@@ -33,11 +35,12 @@
         }
 
       @media screen and (min-width: 768px) {
-      background-position: left;
+      background-position: 11% 52%;
       }
 
       @media screen and (min-width: 1280px) {
         background-position: 50% 68%, 100% -110%, 16% -70%;
+        background-size: 467px 592px;
 
         }
     }
