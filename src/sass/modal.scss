@@ -380,9 +380,34 @@
     border-radius: inherit;
     background-image: var( --button-default-bg-color);
    }
+
+
   }
 
 
-  .download:checked {
-    background: var(--button-default-bg-color);
+
+
+  input {
+    position: absolute;
+    opacity: 1;
   }
+
+
+
+ input:checked ~ .download {
+     opacity: 0;
+      background-image:var( --button-default-bg-color);
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
