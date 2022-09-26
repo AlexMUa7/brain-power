@@ -1,30 +1,22 @@
 .features {
-
-
   background-color: var(--white-color);
   background-repeat: no-repeat;
-  background-position: 50% 25%, 50% -30%, 50% 120%;
-  background-image:url(../images/features/img_sm.png), url(../images/features/img-top-mob_sm.png), url(../images/features/img-bottom_sm.png);
+
+  @media screen and (min-width:320px) and(max-width:767px) {
+    background-size: auto, cover,cover;
+
+  background-position: 50% 25%, 0 -540px, 0 340px;
+
+  background-image:url(../images/features/img_sm.png), url(../images/features/img-top-mob_sm.png), url(../images/features/img-bottom_sm.png) ;
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
       background-image:
     url(../images/features/img_sm@2x.png), url(../images/features/img-top-mob_sm@2x.png),  url(../images/features/img-bottom_sm@2x.png) ;
     }
-
-
-    @media screen and (min-width: 768px) {
-      background-position: 0 52%;
-       background-image:
-     url(../images/features/img_md.png);
-
-   @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
-        background-image:
-      url(../images/features/img_md@2x.png);
-     }
-      }
-
+  }
 
       @media screen and (min-width: 1280px) {
-        background-position: 50% 68%, 100% -110%, 16% -70%;
+
+        background-position: 50% 68%, 100% -80%, 0 -70%;
 
         background-image:
         url(../images/features/img_lg.png), url(../images/features/img_lg-top.png), url(../images/features/img-big_lg.png);
@@ -37,6 +29,22 @@
     }
 
 
+    .features__container {
+
+      @media screen and (min-width: 768px) and (max-width: 1279px) {
+        background-repeat: no-repeat;
+        background-position: 0 52%;
+         background-image:
+       url(../images/features/img_md.png);
+
+     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+          background-image:
+        url(../images/features/img_md@2x.png);
+       }
+        }
+
+    }
+
  .features__list {
 
       @media screen  and (min-width:768px) and (max-width:1279px) {
@@ -45,24 +53,25 @@
         flex-direction: column;
         align-items: flex-end;
 
-
-          margin-bottom: 80px;
-
-          //   &:nth-last-child(1) {
-          //   margin-bottom: 0;
-          // }
         }
 
 
 
       @media screen  and (min-width:1280px) {
       display: flex;
-
+      flex-direction: column;
       margin-right: 152px;
       margin-left: 132px;
+      margin-bottom: 80px;
       }
     }
 
+
+    .features__list-one {
+      @media screen  and (min-width:768px) and (max-width:1279px) {
+        margin-bottom: 80px;
+        }
+    }
 
    .features__last {
       @media screen and (min-width:768px) and (max-width: 1279px) {
@@ -122,8 +131,10 @@
 .features__item {
 
   @media screen and (min-width: 768px) {
-   margin-top: 80px;
 
+   &:not(:first-child) {
+    margin-top: 80px;
+  }
 
   }
 
@@ -175,27 +186,14 @@
 }
 
 
-// .features__thumb {
-//    margin-bottom: 24px;
-
-//   @media screen and (min-width:1280px) {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 80px;
-
-//   }
+.features__thumb {
 
 
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     flex-direction: column;
-//      gap: 80px;
-//     margin-bottom: 80px;
+  @media screen and (min-width:1280px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
 
-//       &:nth-last-child(1) {
-//       margin-bottom: 0;
-//     }
-//   }
+  }
 
-// }
-
+}
