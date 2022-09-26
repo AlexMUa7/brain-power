@@ -1,11 +1,9 @@
 .features {
-  
+
+
   background-color: var(--white-color);
   background-repeat: no-repeat;
   background-position: 50% 25%, 50% -30%, 50% 120%;
-
-
-
   background-image:url(../images/features/img_sm.png), url(../images/features/img-top-mob_sm.png), url(../images/features/img-bottom_sm.png);
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
       background-image:
@@ -14,6 +12,7 @@
 
 
     @media screen and (min-width: 768px) {
+      background-position: 0 52%;
        background-image:
      url(../images/features/img_md.png);
 
@@ -25,6 +24,8 @@
 
 
       @media screen and (min-width: 1280px) {
+        background-position: 50% 68%, 100% -110%, 16% -70%;
+
         background-image:
         url(../images/features/img_lg.png), url(../images/features/img_lg-top.png), url(../images/features/img-big_lg.png);
 
@@ -32,16 +33,6 @@
           background-image:
         url(../images/features/img_lg@2x.png), url(../images/features/img_lg-top@2x.png),  url(../images/features/img-big_lg@2x.png) ;
         }
-        }
-
-      @media screen and (min-width: 768px) {
-      background-position: 11% 52%;
-      }
-
-      @media screen and (min-width: 1280px) {
-        background-position: 50% 68%, 100% -110%, 16% -70%;
-        background-size: 467px 592px;
-
         }
     }
 
@@ -159,7 +150,7 @@
    display: inline-flex;
    align-items: center;
 
-    width: 28px;
+    min-width: 28px;
     height: 28px;
     margin-right: 12px;
     background-image: url(../images/features/img-1.png);
