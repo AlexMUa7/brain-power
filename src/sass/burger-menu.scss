@@ -73,9 +73,12 @@
     align-items: center;
     text-align: center;
     color: #FFFFFF;
-    &:active {
-        color: transparent;
-        background-color: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    &:hover, &:focus {
+        background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
     }
     @media screen and (min-width: 480px) {
         font-size: 48px;
