@@ -1,0 +1,96 @@
+.mobile-menu__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 140px 40px;
+    width: 100%;
+    height: 100%;
+    background-color: #06071B;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // Mobile screen
+    background-image: url(../images/header-menu/header-menu_sm.png);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/header-menu/header-menu__sm@2x.png);
+    }
+
+    // Tablet screen
+    @media screen and (min-width: 481px) {
+    background-image: url(../images/header-menu/header-menu_lg.png);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/header-menu/header-menu_lg@2x.png);
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    transform: translateX(100%);
+    transition: transform 400ms;
+    &.is-open {
+        transform: translateX(0%);
+    }
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.mobile-menu__list {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.mobile-menu__logo {
+    position: absolute;
+    left: 21px;
+    top: 16px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.21;
+    color: #FFFFFF;
+}
+
+.menu-burger__btn {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    border: none;
+    background-color: #06071B;
+}
+
+.mobile-menu__link {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    &:hover, &:focus {
+        background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    @media screen and (min-width: 480px) {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+}
+
+.mobile-menu__point {
+    margin-bottom: 16px;
+    @media screen and (min-width: 480px) {
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 44px;
+    }
+}
