@@ -1,45 +1,49 @@
 .features {
-  background-color: #E5E5E5;
+  background-color: var(--white-color);
   background-repeat: no-repeat;
-  background-position: 50% 25%, top, bottom;
-  background-image:url(../images/features/img_sm.png), url(../images/features/vector-1.png), url(../images/features/vector-2.png);
+
+  @media screen and (min-width:320px) and(max-width:767px) {
+    background-size: auto, cover,cover;
+
+  background-position: 50% 25%, 0 -540px, 0 340px;
+
+  background-image:url(../images/features/img_sm.png), url(../images/features/img-top-mob_sm.png), url(../images/features/img-bottom_sm.png) ;
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
       background-image:
-    url(../images/features/img_sm@2x.png), url(../images/features/vector-1@2x.png),  url(../images/features/vector-2@2x.png) ;
+    url(../images/features/img_sm@2x.png), url(../images/features/img-top-mob_sm@2x.png),  url(../images/features/img-bottom_sm@2x.png) ;
     }
-
-
-    @media screen and (min-width: 768px) {
-       background-image:
-     url(../images/features/img_md.png);
-
-   @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
-        background-image:
-      url(../images/features/img_md@2x.png);
-     }
-      }
-
+  }
 
       @media screen and (min-width: 1280px) {
+
+        background-position: 50% 68%, 100% -80%, 0 -70%;
+
         background-image:
-        url(../images/features/img_lg.png), url(../images/features/vec-1_lg.png),  url(../images/features/vec-2_lg.png) ;
+        url(../images/features/img_lg.png), url(../images/features/img_lg-top.png), url(../images/features/img-big_lg.png);
 
         @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
           background-image:
-        url(../images/features/img_lg@2x.png), url(../images/features/vec-1_lg@2x.png),  url(../images/features/vec-2_lg@2x.png) ;
+        url(../images/features/img_lg@2x.png), url(../images/features/img_lg-top@2x.png),  url(../images/features/img-big_lg@2x.png) ;
         }
-        }
-
-      @media screen and (min-width: 768px) {
-      background-position: left;
-      }
-
-      @media screen and (min-width: 1280px) {
-        background-position: 50% 68%, top right, bottom left;
-        background-size: 396px 601px, 100%, 100%;
         }
     }
 
+
+    .features__container {
+
+      @media screen and (min-width: 768px) and (max-width: 1279px) {
+        background-repeat: no-repeat;
+        background-position: 0 52%;
+         background-image:
+       url(../images/features/img_md.png);
+
+     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+          background-image:
+        url(../images/features/img_md@2x.png);
+       }
+        }
+
+    }
 
  .features__list {
 
@@ -49,25 +53,34 @@
         flex-direction: column;
         align-items: flex-end;
 
-      }
+        }
+
+
 
       @media screen  and (min-width:1280px) {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       margin-right: 152px;
       margin-left: 132px;
+      margin-bottom: 80px;
       }
     }
 
 
-    .features__list .features__last {
+    .features__list-one {
+      margin-bottom: 24px;
+      
+      @media screen  and (min-width:768px) and (max-width:1279px) {
+        margin-bottom: 80px;
+        }
+    }
+
+   .features__last {
       @media screen and (min-width:768px) and (max-width: 1279px) {
         position: absolute;
         left: 0;
         bottom: 0;
-
-        flex-wrap: wrap;
-        margin-bottom: 0;
+        margin:0;
       }
 
     }
@@ -119,12 +132,18 @@
 
 .features__item {
 
+  @media screen and (min-width: 768px) {
+
+   &:not(:first-child) {
+    margin-top: 80px;
+  }
+
+  }
+
   @media screen and (min-width:768px) and (max-width: 1279px)  {
 
     width: 278px;
-
-    margin-right: 90px;
-
+    margin-right: 60px;
     &:not(:last-child)
     {margin-bottom: 0;}
 
@@ -158,7 +177,7 @@
    display: inline-flex;
    align-items: center;
 
-    width: 28px;
+    min-width: 28px;
     height: 28px;
     margin-right: 12px;
     background-image: url(../images/features/img-1.png);
@@ -170,28 +189,13 @@
 
 
 .features__thumb {
-   margin-bottom: 24px;
+
 
   @media screen and (min-width:1280px) {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 80px;
 
   }
 
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-     gap: 80px;
-    margin-bottom: 80px;
-
-      &:nth-last-child(1) {
-      margin-bottom: 0;
-    }
-  }
-
-
-
 }
-

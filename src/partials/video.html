@@ -1,0 +1,94 @@
+<section class="section video">
+  <div class="container video__container">
+    <div class="video__list">
+      <div class="video__block">
+        <h2 class="video__title">WATCH THE VIDEO</h2>
+        <p class="video__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          fringilla fringilla nisl congue congue. Maecenas nec condimentum
+          libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies
+          nisl at, hendrerit risusuis ornare luctus id sollicitudin ante
+          lobortis at.
+        </p>
+        <ul class="video__socials">
+          <li>
+            <a class="video__link" href="https://www.apple.com/ua/app-store/">
+              <svg class="video__icon" width="60" height="60">
+                <use href="./images/icons.svg#icon-apple"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="video__link" href="https://play.google.com/store/games">
+              <svg class="video__icon" width="60" height="60">
+                <use href="./images/icons.svg#icon-android"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="video__sblock">
+        <picture class="video__picture">
+          <!-- Desktop screen -->
+          <!-- <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/watch-video/img_lg.webp    1x,
+              ./images/watch-video/img_lg@2x.webp 2x
+            "
+            type="image/webp"
+          /> -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/watch-video/phone-laptop-1x.png 1x,
+              ./images/watch-video/phone-laptop-2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Tablet screen -->
+          <!-- <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/watch-video/img_md.webp    1x,
+              ./images/watch-video/img_md@2x.webp 2x
+            "
+            type="image/webp"
+          /> -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/watch-video/phone-tab-1x.png 1x,
+              ./images/watch-video/phone-tab-2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Mobile screen -->
+          <!-- <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/watch-video/img_sm.webp    1x,
+              ./images/watch-video/img_sm@2x.webp 2x
+            "
+            type="image/webp"
+          /> -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/watch-video/phone-mob-1x.png 1x,
+              ./images/watch-video/phone-mob-2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="video-img"
+            src="./images/watch-video/phone-mob-1x.png"
+            alt="mobile-phone"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
