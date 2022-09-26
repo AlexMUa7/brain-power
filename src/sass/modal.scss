@@ -378,3 +378,34 @@
  .download__button:focus::after {
   opacity: 1;
 }
+
+.down__checkbox {
+  position: absolute;
+  opacity: 0;
+  transform: scale(1);
+}
+
+
+.form__unchecked {
+  transition: 250ms;
+}
+
+
+.form-checkbox:checked + .form__unchecked {
+  opacity: 0;
+}
+
+
+.down__checkbox:checked + .form__checked {
+  opacity: 1;
+}
+
+
+.form__checked {
+  opacity: 1;
+  transition: 250ms;
+}
+
+.down__checkbox:checked + .form__checked {
+  opacity: 0;
+}

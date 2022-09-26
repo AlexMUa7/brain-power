@@ -6,58 +6,73 @@
       </svg>
     </button>
     <h1 class="modal__title">Download</h1>
-    <div class="downloads">
-      <div class="download__first">
-        <div class="download__icons">
-          <svg class="download__icon" width="80" height="106">
-            <use href="./images/icons.svg#icon-download-icon"></use>
-          </svg>
-        </div>
-        <h2 class="download__title">Download free plan</h2>
-        <ul class="download__list">
-          <li class="download__item">
-            <svg class="download__icon-one" width="14" height="14">
-              <use href="./images/icons.svg#icon-vector"></use>
+    <form class="downloads">
+      <div class="download__first form__unchecked">
+        <label class="download__checkbox">
+          <input class="down__checkbox" type="checkbox" name="user-choice" />
+          <div class="download__icons">
+            <svg class="download__icon" width="80" height="106">
+              <use href="./images/icons.svg#icon-download-icon"></use>
             </svg>
-            <p class="download__text">Donec posuere augue venenatis, aliquet</p>
-          </li>
-          <li class="download__item">
-            <svg class="download__icon-one" width="14" height="14">
-              <use href="./images/icons.svg#icon-vector"></use>
-            </svg>
-            <p class="download__text">Donec posuere augue venenatis, aliquet</p>
-          </li>
-        </ul>
+          </div>
+          <h2 class="download__title">Download free plan</h2>
+          <ul class="download__list">
+            <li class="download__item">
+              <svg class="download__icon-one" width="14" height="14">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+              <p class="download__text">
+                Donec posuere augue venenatis, aliquet
+              </p>
+            </li>
+            <li class="download__item">
+              <svg class="download__icon-one" width="14" height="14">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+              <p class="download__text">
+                Donec posuere augue venenatis, aliquet
+              </p>
+            </li>
+          </ul>
+        </label>
       </div>
-      <div class="download">
-        <div class="download__icons">
-          <svg class="download__icon" width="80" height="106">
-            <use href="./images/icons.svg#icon-download-icon"></use>
-          </svg>
-        </div>
-        <h2 class="download__title">Download for 20$</h2>
-        <ul class="download__list">
-          <li class="download__item">
-            <svg class="download__icon-one" width="14" height="14">
-              <use href="./images/icons.svg#icon-vector"></use>
+      <div class="download form__checked">
+        <label class="download__checkbox">
+          <input class="down__checkbox" type="checkbox" name="user-choice" />
+          <div class="download__icons">
+            <svg class="download__icon" width="80" height="106">
+              <use href="./images/icons.svg#icon-download-icon"></use>
             </svg>
-            <p>Donec posuere augue venenatis, aliquet</p>
-          </li>
-          <li class="download__item">
-            <svg class="download__icon-one" width="14" height="14">
-              <use href="./images/icons.svg#icon-vector"></use>
-            </svg>
-            <p class="download__text">Donec posuere augue venenatis, aliquet</p>
-          </li>
-          <li class="download__item">
-            <svg class="download__icon-one" width="14" height="14">
-              <use href="./images/icons.svg#icon-vector"></use>
-            </svg>
-            <p class="download__text">Donec posuere augue venenatis, aliquet</p>
-          </li>
-        </ul>
+          </div>
+          <h2 class="download__title">Download for 20$</h2>
+          <ul class="download__list">
+            <li class="download__item">
+              <svg class="download__icon-one" width="14" height="14">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+              <p>Donec posuere augue venenatis, aliquet</p>
+            </li>
+            <li class="download__item">
+              <svg class="download__icon-one" width="14" height="14">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+              <p class="download__text">
+                Donec posuere augue venenatis, aliquet
+              </p>
+            </li>
+            <li class="download__item">
+              <svg class="download__icon-one" width="14" height="14">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+              <p class="download__text">
+                Donec posuere augue venenatis, aliquet
+              </p>
+            </li>
+          </ul>
+        </label>
       </div>
-    </div>
+    </form>
+
     <p class="download__description">
       Nunc vulputate nibh sed congue facilisis.Curabitur posuere scelerisque
       neque.In sit amet lectus non lacus
