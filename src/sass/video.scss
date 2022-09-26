@@ -68,7 +68,6 @@
 .video__picture {
   display: flex;
   justify-content: center;
-  padding: 40px 0;
 }
 
 .video__list {
@@ -81,13 +80,6 @@
 .video__block {
   @media screen and (min-width: 1280px) {
     width: 479px;
-  }
-}
-
-.video__picture {
-  @media screen and (min-width: 1280px) {
-    width: 501px;
-    padding-right: 121px;
   }
 }
 
