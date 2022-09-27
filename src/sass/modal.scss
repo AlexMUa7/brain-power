@@ -103,7 +103,10 @@
 //  }
 
  .download__list {
-  margin-top: 20px;
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+
 
  }
 
@@ -115,11 +118,9 @@
 
  }
 
- .download__icons {
-  padding-top: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ .download__icon {
+  margin-left: 76px;
+  margin-right: 77px;
 
   fill: var(--white-color);
 
@@ -187,6 +188,61 @@
   }
 
  }
+
+
+ .download {
+  position: relative;
+  height: 394px;
+  border-radius: 6px;
+  background: var(--bg-color);
+
+  @media screen and (min-width:768px) {
+    width: 233px;
+
+  }
+
+    &::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+  background-image: var( --button-default-bg-color);
+ }
+
+}
+
+
+ .download__checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+
+ }
+
+ .download__checkbox:checked + .download__list {
+  background: var(--button-default-bg-color);
+
+ }
+
+//  .download__checkbox:checked {
+//  border: 6px solid black;}
+
+//  .download__checkbox:hover {
+//   background-color: var(--button-default-bg-color);
+//  }
+
+
+
 
  .characteristics {
 
@@ -355,34 +411,6 @@
   opacity: 1;
 }
 
-
-
-  .download {
-    position: relative;
-    height: 394px;
-    border-radius: 6px;
-    background: var(--bg-color);
-
-    @media screen and (min-width:768px) {
-      width: 233px;
-
-    }
-
-      &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -2px;
-    border-radius: inherit;
-    background-image: var( --button-default-bg-color);
-   }
-
-
-  }
 
 
 
