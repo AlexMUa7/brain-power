@@ -1,0 +1,46 @@
+.dark-gradient {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/png-for-contact-and-footer/spr-mob-1x.png),
+    url(../images/png-for-contact-and-footer/spr-mob-2.png);
+  background-position: top 300px left -328px, top -100px left 0px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/png-for-contact-and-footer/spr-mob-1@2x.png),
+      url(../images/png-for-contact-and-footer/spr-mob-2@2x.png);
+    background-position: top 300px left -328px, top -100px left 0px;
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/png-for-contact-and-footer/spr-tab-1.png);
+    background-position: top -250px left 0;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/png-for-contact-and-footer/spr-tab-1@2x.png);
+      background-position: top -250px left 0, top 1px left 1px;
+    }
+  }
+
+  @media screen and(min-width:769px) {
+    background-image: url(../images/png-for-contact-and-footer/spr-desk-1.png),
+      url(../images/png-for-contact-and-footer/spr-tab-2.png);
+    background-position: top -180px left -455px, top 1px left 1px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/png-for-contact-and-footer/spr-desk1@2x.png),
+        url(../images/png-for-contact-and-footer/spr-tab-2@x.png);
+      background-position: top -140px left -455px, top 149px left -50px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-position: top -430px left 0px;
+    }
+  }
+}

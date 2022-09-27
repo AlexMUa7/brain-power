@@ -1,82 +1,92 @@
 .head {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .main__container {
-    background: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
+  background: linear-gradient(
+    90.03deg,
+    rgba(0, 197, 235, 0.3) -1.97%,
+    rgba(181, 68, 254, 0.3) 89.43%
+  );
 }
 .head__container {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-    @media screen and (min-width: 768px) {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin: 0 auto;
-        max-width: 1280px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    
+  @media screen and (min-width: 1280px) {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
-
 .head__logo {
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.21;
-    color: #FFFFFF;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.21;
+  color: #ffffff;
+  margin: 14px 0px;
+  @media screen and (min-width: 768px) {
     margin: 14px 0px;
-    @media screen and (min-width: 768px) {
-        margin: 14px 0px;
-    }
-    @media screen and (min-width: 768px) {
-        margin: 19px 0px;
-    }
+  }
+  @media screen and (min-width: 768px) {
+    margin: 19px 0px;
+  }
 }
 
 .head__list {
-    display: flex;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.25;
-    color: #FFFFFF;
-    @media screen and (min-width: 768px) {
-        margin-right: 32px;
-    }
-    @media screen and (min-width: 768px) {
-        margin-right: 16px;
-    }
+  display: flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  transition-property: color;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 16px;
+  }
 }
 
 .head__point {
-    & + .head__point {
-        margin-left: 40px;
-    }
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+  &:hover,
+  &:focus {
+    background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  & + .head__point {
+    margin-left: 40px;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .head__link {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .head__btn {
-    border: none;
-    background-color: transparent;
-    color: #FFFFFF;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
 
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
-
