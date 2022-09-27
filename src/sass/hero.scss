@@ -99,8 +99,10 @@
     @media screen and (min-width: 768px) {
         display: block;
         position: absolute;
-        top: 26px;
-        right: -72px;
+        top: 76px;
+        right: -7px; 
+        filter: blur(51.5px);
+        
     }
     
     @media screen and (min-width: 1280px) {
