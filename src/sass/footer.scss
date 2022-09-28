@@ -7,26 +7,26 @@
 }
 
 .footer {
-  background: #06071b;
   padding-top: 22px;
   padding-bottom: 22px;
   border-top: 1px solid #ffffff;
-
-  @media screen and (max-width: 480px) {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../images/png-for-contact-and-footer/spr-mob-1x.png);
-    background-position: top -317px left 68px;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/png-for-contact-and-footer/spr-mob-1@2x.png);
-      background-position: top -317px left 68px;
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    padding-right: 0px;
-  }
 }
+
+//   @media screen and (max-width: 480px) {
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     background-image: url(../images/png-for-contact-and-footer/spr-mob-1x.png);
+//     background-position: top -317px left 68px;
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/png-for-contact-and-footer/spr-mob-1@2x.png);
+//       background-position: top -317px left 68px;
+//     }
+//   }
+//   @media screen and (min-width: 1280px) {
+//     padding-right: 0px;
+//   }
+// }
